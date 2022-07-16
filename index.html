@@ -12,71 +12,88 @@
     <header class="header container">
         <nav class="navigation">
             <ul class="header__menu">
-                <li class="header__item"><a href="#" class="header__link">Works</a></li>
-                <li class="header__item"><a href="#" class="header__link">Blog</a></li>
-                <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+                <li class="header__item"><a href="#portfolio" class="header__link">Портфолио</a></li>
+                <li class="header__item"><a href="#skills" class="header__link">Навыки</a></li>
+                <li class="header__item"><a href="#" class="header__link">Контакты</a></li>
             </ul>
         </nav>
     </header>
     <section class="blog container">
         <div class="blog__wrapper">
             <div class="blog__inner">
-                <div class="title title_blog">Hi, I am Ilyas, Web-Developer</div>
-                <div class="descr descr_blog">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                <div class="title title_blog">Привет! Меня зовут Ильяс, я веб-разработчик</div>
+                <div class="descr descr_blog">Занимаюсь HTML-версткой сайтов. У меня полностью кроссбраузерная, адаптивная и валидная верстка. Для обеспечения выполнения требований, предъявляемых к верстке сайта в процессе работы над проектом я использую сборщик проектов Gulp для автоматизации процесса верстки, препроцессор Sass для ускоренной стилизации сайта и более гибкого кода. БЭМ, Bootstrap и media-запросы для адаптивной верстки сайта.</div>
             </div>
             <img src="img/blog/photo.jpg" alt="" class="blog__photo">
         </div>
-        <button class="blog__button">Download Resume</button>
+        <button class="blog__button">Скачать резюме</button>
     </section>
-    <section class="post">
+    <section class="post" id="skills">
         <div class="container">
-            <div class="post__wrappers">
-                <div class="title title_post">Recent posts</div>
-                <a href="#" class="post__link">View all</a></li>
-            </div>
+            <div class="title title_post">Мои навыки</div>
             <div class="post__wrapper">
                 <div class="post__card">
-                    <div class="title_card">История о том, как я начал учить в академии ШАГ</div>
-                    <div class="post__inner">
-                        <div class="post__text">12 Feb 2020</div>
-                        <span></span>
-                        <div class="post__text">Design, Pattern</div>
-                    </div>
-                    <div class="descr_post">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                    <div class="title_card">HTML5/CSS3</div>
+                    <ul class="post__wrappers">
+                        <li class="descr_post">Валидный, кроссбраузерный код</li>
+                        <li class="descr_post">Семантичная верстка</li>
+                        <li class="descr_post">Структутированный код</li>
+                        <li class="descr_post">Анимация, hover-эффекты без JS</li>
+                        <li class="descr_post">Методология БЭМ</li>
+                    </ul>
                 </div>
                 <div class="post__card">
-                    <div class="title_card">История о том, как я начал учить в академии ШАГ</div>
-                    <div class="post__inner">
-                        <div class="post__text">12 Feb 2020</div>
-                        <span></span>
-                        <div class="post__text">Design, Pattern</div>
-                    </div>
-                    <div class="descr_post">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                    <div class="title_card">Figma</div>
+                    <ul class="post__wrappers">
+                        <li class="descr_post">Нарезка изображений из макета</li>
+                        <li class="descr_post">Оптимизация изображений для Web</li>
+                        <li class="descr_post">Экспорт SVG-изображений</li>
+                        <li class="descr_post">Экспорт стилей для ускоренной верстки</li>
+                    </ul>
+                </div>
+                <div class="post__card">
+                    <div class="title_card">Sass</div>
+                    <ul class="post__wrappers">
+                        <li class="descr_post">Ускоренная стилизация сайта</li>
+                        <li class="descr_post">Более гибкий код</li>
+                        <li class="descr_post">Улучшенная логика стилей</li>
+                        <li class="descr_post">Упрощенный синтаксис</li>
+                        <li class="descr_post">Вложенность селекторов без ошибок</li>
+                    </ul>
+                </div>
+                <div class="post__card">
+                    <div class="title_card">Bootstrap</div>
+                    <ul class="post__wrappers">
+                        <li class="descr_post">Высокая скорость разработки сайта</li>
+                        <li class="descr_post">Кроссбраузерность и адаптивность сайта</li>
+                        <li class="descr_post">Готовые шаблоны элементов сайта</li>
+                        <li class="descr_post">Оптимизированная навигация</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section class="featured container">
-        <div class="title title_post">Featured works</div>
+    <section class="featured container" id="portfolio">
+        <div class="title title_post title_portfolio">Портфолио</div>
         <div class="featured__wrapper">
-            <img src="img/featured/design.png" alt="" class="featured__photo">
+            <img src="img/featured/uber.png" alt="" class="featured__photo">
             <div class="featured__inner">
-                <div class="title title_featured">Designing Dashboards</div>
-                <div class="descr descr_featured">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                <div class="title title_featured">Компания UBER PARTNERS</div>
+                <div class="descr descr_featured">Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний. Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.</div>
             </div>
         </div>
         <div class="featured__wrapper">
-            <img src="img/featured/vibrant.png" alt="" class="featured__photo">
+            <img src="img/featured/runsmart.png" alt="" class="featured__photo">
             <div class="featured__inner">
-                <div class="title title_featured">Vibrant Portraits of 2020</div>
-                <div class="descr descr_featured">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                <div class="title title_featured">RunSmart подбор пульсометра</div>
+                <div class="descr descr_featured">Наши сотрудники всегда готовы поделиться своим опытом, так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!</div>
             </div>
         </div>
         <div class="featured__wrapper">
-            <img src="img/featured/36.png" alt="" class="featured__photo">
+            <img src="img/featured/erzo.png" alt="" class="featured__photo">
             <div class="featured__inner">
-                <div class="title title_featured">36 Days of Malayalam type</div>
-                <div class="descr descr_featured">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
+                <div class="title title_featured">Концептуальный Бизнес-Центр</div>
+                <div class="descr descr_featured">Cовременный торгово-офисный комплекс расположен в престижной локации города Нур-Султан, микрорайоне Ак-Булак-3, рядом с крупными автомагистралями и значимыми объектами города.</div>
             </div>
         </div>
     </section>
@@ -87,7 +104,7 @@
             <img src="icons/Group.png" alt="" class="footer__icon">
             <img src="icons/Linkedin.png" alt="" class="footer__icon">
         </div>
-        <div class="footer__text">Copyright ©2020 All rights reserved </div>
+        <div class="footer__text">Copyright ©2022 All rights reserved </div>
     </footer>
 </body>
 </html>

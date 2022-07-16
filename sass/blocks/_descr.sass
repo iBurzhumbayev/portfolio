@@ -7,8 +7,18 @@
         width: 500px
         margin-top: 30px
     &_post
-        width: 360px
+        position: relative
+        width: 271px
         margin-top: 15px
+        margin-left: 15px
+        &::before
+            content: ''
+            position: absolute
+            width: 5px 
+            height: 5px 
+            background-color: #FF6464
+            top: 9.5px
+            left: -15px  
     &_featured
         margin-top: 15px
         width: 587px

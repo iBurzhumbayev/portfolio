@@ -3,11 +3,27 @@
     font-size: 44px
     color: #21243D
     &_blog
-        width: 324px
+        width: 368px
     &_post
-        font-weight: 700
+        position: relative
+        text-align: center
+        font-weight: 500
         font-size: 22px
+        text-transform: uppercase
+        margin-bottom: 6px
+        &::before
+            content: ''
+            position: absolute
+            height: 2px
+            width: 50px
+            background-color: #21243D
+            left: 50%
+            transform: translateX(-50%)
+            bottom: -6px
     &_card
         font-size: 26px
+        text-align: center
     &_featured
         font-size: 30px
+    &_portfolio
+        margin-bottom: 50px
